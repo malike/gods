@@ -16,7 +16,7 @@ type Graphs interface {
 
 	RemoveEdge(vertexOne interface{}, vertexTwo interface{}) error
 
-	HasEdge(vertexOne int, vertexTwo int) bool
+	HasEdge(vertexOne interface{}, vertexTwo interface{}) bool
 
 	GetGraphType() GraphType
 
