@@ -1,7 +1,7 @@
 package adjancencylist
 
 import (
-	"goca/graphs"
+	"gods/graphs"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package adjancencymatrix
 
 import (
 	"errors"
-	"goca/graphs"
+	"gods/graphs"
 )
 
 type AdjacencyMatrix struct {

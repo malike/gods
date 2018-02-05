@@ -1,7 +1,7 @@
 package adjancencymatrix
 
 import (
-	"goca/graphs"
+	"gods/graphs"
 	"testing"
 )
 

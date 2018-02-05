@@ -10,21 +10,21 @@ const (
 type Graphs interface {
 	Init()
 
-	AddEdge(vertexOne int, vertexTwo int) error
+	AddEdge(vertexOne interface{}, vertexTwo interface{}) error
 
-	AddEdgeWithWeight(vertexOne int, vertexTwo int, weight int) error
+	AddEdgeWithWeight(vertexOne interface{}, vertexTwo interface{}, weight int) error
 
-	RemoveEdge(vertexOne int, vertexTwo int) error
+	RemoveEdge(vertexOne interface{}, vertexTwo interface{}) error
 
 	HasEdge(vertexOne int, vertexTwo int) bool
 
 	GetGraphType() GraphType
 
-	GetAdjacentNodesForVertex(vertex int) map[int]bool
+	GetAdjacentNodesForVertex(vertex interface{}) map[interface{}]bool
 
-	GetWeightOfEdge(vertexOne int, vertexTwo int) (int, error)
+	GetWeightOfEdge(vertexOne interface{}, vertexTwo interface{}) (int, error)
 
 	GetNumberOfVertices() int
 
-	GetIndegreeForVertex(vertex int) int
+	GetIndegreeForVertex(vertex interface{}) int
 }

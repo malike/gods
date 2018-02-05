@@ -2,7 +2,7 @@ package adjancencylist
 
 import (
 	"errors"
-	"goca/graphs"
+	"gods/graphs"
 )
 
 type AdjacencyList struct {
